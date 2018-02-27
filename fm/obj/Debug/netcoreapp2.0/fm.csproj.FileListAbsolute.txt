@@ -9,3 +9,13 @@ C:\Users\Marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp2.
 C:\Users\Marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp2.0\fm.dll
 C:\Users\Marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp2.0\fm.pdb
 C:\Users\Marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp2.0\fm.csprojResolveAssemblyReference.cache
+C:\Users\Marc\Documents\repos\fm-be\fm\bin\Debug\netcoreapp2.0\fm.deps.json
+C:\Users\Marc\Documents\repos\fm-be\fm\bin\Debug\netcoreapp2.0\fm.runtimeconfig.json
+C:\Users\Marc\Documents\repos\fm-be\fm\bin\Debug\netcoreapp2.0\fm.runtimeconfig.dev.json
+C:\Users\Marc\Documents\repos\fm-be\fm\bin\Debug\netcoreapp2.0\fm.dll
+C:\Users\Marc\Documents\repos\fm-be\fm\bin\Debug\netcoreapp2.0\fm.pdb
+C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.csproj.CoreCompileInputs.cache
+C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.AssemblyInfoInputs.cache
+C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.AssemblyInfo.cs
+C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.dll
+C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.pdb

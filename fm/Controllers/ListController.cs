@@ -2,8 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using fm.Providers;
-using fm.Model;
-
+using System.IO;
 
 namespace fm.Controllers
 {
@@ -11,9 +10,19 @@ namespace fm.Controllers
     public class ListController : Controller
     {
         [HttpGet("{*id}")]
-        public FI[] Get(String id)
+        public IActionResult Get(String id)
         {
-            return FileSystemProvider.GetFIs(id).ToArray();
+            try
+            {
+                return Ok(FileSystemProvider.GetFIs(id).ToArray());
+            }
+            catch(FileNotFoundException) {
+                return NotFound();
+            }
+            catch (AccessViolationException)
+            {
+                return Forbidden();
+            }
         }
         
         // POST api/values
