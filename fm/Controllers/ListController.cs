@@ -16,12 +16,16 @@ namespace fm.Controllers
             {
                 return Ok(FileSystemProvider.GetFIs(id).ToArray());
             }
-            catch(FileNotFoundException) {
+            catch (DirectoryNotFoundException)
+            {
+                return NotFound();
+            }
+            catch (FileNotFoundException) {
                 return NotFound();
             }
             catch (AccessViolationException)
             {
-                return Forbidden();
+                return Forbid();
             }
         }
         
