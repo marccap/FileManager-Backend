@@ -1,0 +1,10 @@
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\bin\Debug\netcoreapp1.1\fm.deps.json
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\bin\Debug\netcoreapp1.1\fm.runtimeconfig.json
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\bin\Debug\netcoreapp1.1\fm.runtimeconfig.dev.json
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\bin\Debug\netcoreapp1.1\fm.dll
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp1.1\fm.AssemblyInfo.cs
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\bin\Debug\netcoreapp1.1\fm.pdb
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp1.1\fm.dll
+c:\users\marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp1.1\fm.pdb
+C:\Users\Marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp1.1\fm.csproj.CoreCompileInputs.cache
+C:\Users\Marc\documents\visual studio 2017\Projects\fm\fm\obj\Debug\netcoreapp1.1\fm.AssemblyInfoInputs.cache
