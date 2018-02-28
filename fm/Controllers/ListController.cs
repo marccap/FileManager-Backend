@@ -42,9 +42,25 @@ namespace fm.Controllers
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{*id}")]
+        public IActionResult Delete(String id)
         {
+            try
+            {
+                FileSystemProvider.DeleteFI(id);
+            }
+            catch (FileNotFoundException)
+            {
+                return NotFound();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return Forbid();
+            }
+            catch (IOException) {
+                return BadRequest();
+            }
+            return Ok();
         }
     }
 }
