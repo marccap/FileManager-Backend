@@ -23,7 +23,7 @@ namespace fm.Controllers
             catch (FileNotFoundException) {
                 return NotFound();
             }
-            catch (AccessViolationException)
+            catch (UnauthorizedAccessException)
             {
                 return Forbid();
             }
