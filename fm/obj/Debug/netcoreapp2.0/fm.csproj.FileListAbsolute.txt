@@ -19,3 +19,4 @@ C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.AssemblyInfoIn
 C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.AssemblyInfo.cs
 C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.dll
 C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.pdb
+C:\Users\Marc\Documents\repos\fm-be\fm\obj\Debug\netcoreapp2.0\fm.csprojResolveAssemblyReference.cache
