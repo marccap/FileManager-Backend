@@ -6,12 +6,12 @@ namespace fm.Providers
 {
     public class FileSystemProvider
     {
-        public static IEnumerable<FI> GetFIs(String path, bool directories = true, bool files = true, bool showSystem = false, bool showHidden = false, bool recursive = false)
+        public static IEnumerable<FI> GetFIs(String path, bool listDirectories = true, bool listFiles = true, bool listSystem = false, bool listHidden = false, bool recursive = false)
         {
             var directoryInfo = new System.IO.DirectoryInfo(path);
             var searchOption = recursive ? System.IO.SearchOption.AllDirectories : System.IO.SearchOption.TopDirectoryOnly;
 
-            if (directories)
+            if (listDirectories)
             {
                 foreach (var fsi in directoryInfo.GetDirectories("*", searchOption))
                 {
