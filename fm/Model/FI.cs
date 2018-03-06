@@ -8,5 +8,6 @@ namespace fm.Model
         public bool IsDirectory { get; set; }
         public string PhysicalPath { get; set; }
         public DateTime LastModified { get; set; }
+        public long Length { get; set; }
     }
 }
