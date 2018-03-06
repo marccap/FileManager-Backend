@@ -27,7 +27,12 @@ namespace fm.Controllers
         {
             try
             {
-                return Ok(FileSystemProvider.GetFIs(id).ToArray());
+                var items = FileSystemProvider.
+                    GetFIs(rootPath + id).
+                    Take(300).
+                    Select(RemovePrefix).
+                    ToArray();
+                return Ok(items);
             }
             catch (DirectoryNotFoundException)
             {
