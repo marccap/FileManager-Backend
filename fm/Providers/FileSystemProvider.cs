@@ -61,16 +61,13 @@ namespace fm.Providers
 
         public static void DeleteFI(String path) {
             var di = new System.IO.DirectoryInfo(path);
+            var fi = new System.IO.FileInfo(path);
             if (di.Exists)
             {
                 di.Delete();
-                return;
             }
-            var fi = new System.IO.FileInfo(path);
-
-            if (fi.Exists) {
+            else if (fi.Exists) {
                 fi.Delete();
-                return;
             }
         }
     }
