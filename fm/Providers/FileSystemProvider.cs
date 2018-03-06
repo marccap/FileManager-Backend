@@ -15,11 +15,16 @@ namespace fm.Providers
             {
                 foreach (var fsi in directoryInfo.GetDirectories("*", searchOption))
                 {
-                    if ((!showHidden && (fsi.Attributes & System.IO.FileAttributes.Hidden) != 0) || (!showSystem && (fsi.Attributes & System.IO.FileAttributes.System) != 0))
+                    var isHidden = (fsi.Attributes & System.IO.FileAttributes.Hidden) != 0;
+                    if ((!listHidden && isHidden))
                     {
                         continue;
                     }
-                    yield return new Directory
+                    var isSystem = (fsi.Attributes & System.IO.FileAttributes.System) != 0;
+                    if (!listSystem && isSystem) {
+                        continue;
+                    }
+                    yield return new FI
                     {
                         Name = fsi.Name,
                         PhysicalPath = fsi.FullName.Replace("\\", "/"),
@@ -28,15 +33,21 @@ namespace fm.Providers
                     };
                 }
             }
-            if (files)
+            if (listFiles)
             {
                 foreach (var fsi in directoryInfo.GetFiles("*", searchOption))
                 {
-                    if ((!showHidden && (fsi.Attributes & System.IO.FileAttributes.Hidden) != 0) || (!showSystem && (fsi.Attributes & System.IO.FileAttributes.System) != 0))
+                    var isHidden = (fsi.Attributes & System.IO.FileAttributes.Hidden) != 0;
+                    if (!listHidden && isHidden)
                     {
                         continue;
                     }
-                    yield return new File
+                    var isSystem = (fsi.Attributes & System.IO.FileAttributes.System) != 0;
+                    if (!listSystem && isSystem)
+                    {
+                        continue;
+                    }
+                    yield return new FI
                     {
                         Name = fsi.Name,
                         PhysicalPath = fsi.FullName.Replace("\\", "/"),
