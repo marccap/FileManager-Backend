@@ -10,6 +10,18 @@ namespace fm.Controllers
     [Route("[controller]")]
     public class ListController : Controller
     {
+        public String rootPath;
+
+        public ListController(string path = @"C:/") {
+            rootPath = path;
+        }
+
+        private FI RemovePrefix(FI fi)
+        {
+            fi.PhysicalPath = fi.PhysicalPath.Remove(0, rootPath.Length - 1);
+            return fi;
+        }
+
         [HttpGet("{*id}")]
         public IActionResult Get(String id)
         {
