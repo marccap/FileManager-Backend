@@ -1,3 +1,4 @@
-﻿.vs
-obj
-bin
+﻿/fm/.vs
+/fm/obj
+/fm/bin
+/.vs
